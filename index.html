@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="libs/aos/aos.css" />
+  <script src="libs/typed.js"></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Abhishek</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h1>Hello, I'm Abhishek 👋</h1>
+    <h2><span id="typed"></span></h2>
+    <a href="assets/resume.pdf" target="_blank">Download Resume</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a Java Developer and DevOps enthusiast passionate about building modern backend and deployment systems.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <!-- JS will insert project cards here -->
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Java</li>
+      <li>Spring Boot</li>
+      <li>Docker</li>
+      <li>Jenkins</li>
+      <li>Git</li>
+      <li>AWS</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/your-username" target="_blank">your-username</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">your-profile</a></p>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="libs/aos/aos.js"></script>
+  <script>
+    AOS.init();
+    new Typed('#typed', {
+      strings: ["Java Developer", "Spring Boot Enthusiast", "DevOps Learner"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
+</body>
+</html>
